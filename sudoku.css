@@ -1,0 +1,98 @@
+/*
+
+	How do I get a div to be full height?
+		ie.  I just want an empty box the size of the screen
+
+	How do I make divs line up left to right instead of top to bottom 
+		whilst still using position: relative;?
+	By using display: inline;
+
+*/
+
+#content {
+	/* 3 x .group + 6 px.  1 for each group's side */
+/*
+	display: block;
+	background-color: green;
+*/
+	text-align: justify;
+	height: 480px;
+	margin: 0px auto 20px auto;
+	padding: 0px 0px 0px 0px;
+	width: 770px;	
+}
+
+#description {
+	display: block; 
+	width: 700px; 
+	padding-top: 0px; 
+	text-align: justify; 
+	font-size:16px; 
+	margin: auto;
+}
+
+.puzzle {
+	position: relative;
+	background: #EEEEEE;
+	width: 378px;	
+	border: 1px solid black;
+	height: 378px;
+	padding: 0px;
+	float: left;
+}
+
+#puzzledivider {
+	width: 10px; 
+	height: 378px; 
+	display: inline; 
+	float: left;
+}
+
+a {
+	font-size: 14px;
+	padding: 0px;
+	text-align: left;
+}
+
+.group {
+	/* have to add 6 px.  1 for each cell's side */
+	position: relative;
+	display: inline;
+	float: left;
+	border: 1px solid black;
+	background: white;
+	height: 126px;
+	width: 126px;
+}
+
+.cell {
+	position: relative;
+	display: inline;
+	float: left;
+	border: 1px solid gray;
+	background: white;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.button {
+	/* this margin auto feature is what makes it center */
+	margin: auto;
+	position: relative;
+	width: 50px;
+	display: block;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid gray;
+}
+
+input {
+	font-size: 16px;
+	text-align: center;
+}
+
