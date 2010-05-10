@@ -1,2 +1,3 @@
-Options Indexes FollowSymLinks MultiViews ExecCGI
+Options +ExecCGI
+DirectoryIndex index.pl
 AddHandler cgi-script cgi pl sh
